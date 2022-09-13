@@ -10,6 +10,8 @@ import XCTest
 
 class SwiftyLibTests: XCTestCase {
 
+    var swiftyLib: SwiftyLib!
+    
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.
     }
@@ -21,7 +23,20 @@ class SwiftyLibTests: XCTestCase {
     func testExample() throws {
         // This is an example of a functional test case.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
+        
+        
+        
     }
+    
+    func testAdd() {
+//        XCTAssertEqual(swiftyLib.add(a: 1, b: 1), 2)
+        XCTAssertEqual(swiftyLib.add(a: 1, b: 1), 2)
+    }
+    
+    func testSub() {
+        XCTAssertEqual(swiftyLib.sub(a: 4, b: 1),3)
+    }
+    
 
     func testPerformanceExample() throws {
         // This is an example of a performance test case.
@@ -29,5 +44,7 @@ class SwiftyLibTests: XCTestCase {
             // Put the code you want to measure the time of here.
         }
     }
+    
+ 
 
 }
